@@ -9,12 +9,14 @@ html, body, h1 {
 }
 
 h1 {
-  padding: .75em;
+  padding: .50em;
+  font-size: 6rem;
 }
 
 p {
   padding: 2em;
 }
+
 
 .arrow {
   margin-bottom: 3em;
@@ -28,4 +30,20 @@ li {
   display: inline-block;
   margin-right: 1em;
   padding: 0 1em;
+}
+
+a.close-reveal-modal {
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 40em) {
+/* line 158, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
+  dialog, .reveal-modal {
+    height: 40vh;
+    min-height: 30vh;
+    }
+  h1 {
+  font-size: 3rem;
+  }
 }
